@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+body {
+  background-color: rgb(237, 237, 237);
+}
+
+#pricing {
+  width: 90%;
+  margin: 100px auto;
+  font-family: "Open Sans", Helvetica;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price_card {
+  width: 250px;
+  background: rgb(255, 255, 255);
+  display: block;
+  top: 0;
+}
+.price_card:not(:last-child) {
+  margin-right: 20px;
+}
+.header {
+  color: rgb(255, 255, 255);
+}
+.bronze .header {
+  background: #ff9800;
+}
+.silver .header {
+  background: rgb(246, 77, 77);
+}
+
+.gold .header {
+  background: #ffc107;
+}
+.platinum .header {
+  background: rgb(48, 219, 181);
+}
+.price {
+  width: 100%;
+  font-size: 60px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 30px 0 10px;
+}
+.name {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  padding: 0 0 30px;
+}
+.features {
+  list-style: none;
+  text-align: center;
+  color: rgb(138, 138, 138);
+  margin: 0;
+  padding: 0;
+}
+.features li {
+  margin: 0 35px;
+  padding: 20px 15px;
+}
+.features li:not(:last-child) {
+  border: 1px solid rgb(242, 242, 242);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+button {
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px auto 35px;
+}
+.alpha button {
+  background: rgb(245, 166, 35);
+}
+.bravo button {
+  background: rgb(246, 77, 77);
+}
+.charlie button {
+  background: rgb(48, 219, 181);
+}
+.tip {
+  font-family: "Indie Flower";
+  position: absolute;
+  color: rgb(117, 117, 117);
+  margin: 10px 5px;
+}
+/* Tooltip */
+.field {
+  margin: 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.info {
+  display: inline-block;
+  color: #00c1d8;
+}
+
+.info i {
+  font-size: 1.2em;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tooltip-content {
+  position: relative;
+  background: white;
+  text-align: left;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.tooltip-content:before {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.info-right .tooltip-content {
+  left: 15px;
+  border-left: 5px solid #00c1d8;
+}
+.info-right .tooltip-content:before {
+  left: -15px;
+  top: 50%;
+  border-right: 15px solid #00c1d8;
+}
+
+.info-left .tooltip-content {
+  right: 15px;
+  border-right: 5px solid #00c1d8;
+}
+.info-left .tooltip-content:before {
+  right: -15px;
+  top: 50%;
+  border-left: 15px solid #00c1d8;
+}
